@@ -23,9 +23,9 @@ body{
     font-family: 'Alata', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
-.hidden{
+/* .hidden{
     display: none;
-}
+} */
 .heading{
     /* background-color: brown; */
     width: 100%;
@@ -36,17 +36,49 @@ body{
 }
 .heading .navigation{
     /* background-color: aqua; */
+    /* min-height: 5rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 2rem 0 1.5rem;
 }
+/****************MOBILE MENU***************/
+
+.heading .navigation .nav-links{
+position: fixed;
+right: -100%;
+background-color: black;
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+width: 375px;
+}
+
+.heading .navigation .nav-links a{
+    text-decoration: none;
+    color: white;
+    padding: 0 0 0 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    
+}
+.heading .navigation .nav-links .link-logo{
+    width: 10rem;
+    padding: 3rem 0 10rem 2rem;
+}
+.heading .navigation .nav-links .active{
+    right: 0;
+}
+/****************MOBILE MENU ENDS***************/
+
 .heading .navigation .hamburger{
     align-self: center;
 }
 .heading .immersive{
     /* background-color: chartreuse; */
     width: 90%;
+    height: 12rem;
     border: 2px solid white;
     margin: 9rem auto;
     padding: 1rem 14rem 1rem 1rem;
@@ -58,6 +90,31 @@ body{
 }
 
 /********************MEDIA QUERRY*********************/
+
+@media screen and (min-width: 390px){
+    html{
+        width: 100%;
+    }
+    .heading .immersive{
+        margin: 15rem auto 0;  
+    }
+}
+
+@media screen and (min-width: 412px) {
+    .heading .immersive{
+        margin: 17rem auto 0; 
+}
+}
+
+@media screen and (min-width: 414px) {
+    .heading .immersive{
+        height: 14rem; 
+        line-height: 3rem;
+        padding:1rem 12rem 1rem 1rem ;
+        margin: 16rem auto 0;
+    }  
+}
+
 @media screen and (min-width:1024px) {
    html{
     width: 100%;
@@ -76,7 +133,6 @@ body{
 }
 .heading .navigation .nav-links{
     display: flex;
-   /* background-color: brown; */
    padding-top: 2rem;
    margin-right: 6rem;
    font-weight: bold;
@@ -84,10 +140,15 @@ body{
 .heading .navigation .nav-links li{
     margin: 0 1rem;
     list-style-type: none;
+   
 }
 .heading .navigation .nav-links li a{
     text-decoration: none;
     color:hsl(0, 0%, 100%) ;
+    transition: 0.7s ease;
+}
+.heading .navigation .nav-links li a:hover{
+    color: hsl(0, 0%, 41%);
 }
 .heading .immersive{
     width: 30%; 
