@@ -36,12 +36,15 @@ body{
 }
 .heading .navigation{
     /* background-color: aqua; */
-    /* min-height: 5rem; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 2rem 0 1.5rem;
+    max-height: 6rem;
+    justify-content: space-around;
+    padding-top: 2rem;
 }
+.heading .navigation .hamburger{
+    align-self: center;
+}
+
 /****************MOBILE MENU***************/
 
 .heading .navigation .nav-links{
@@ -72,9 +75,7 @@ width: 375px;
 }
 /****************MOBILE MENU ENDS***************/
 
-.heading .navigation .hamburger{
-    align-self: center;
-}
+
 .heading .immersive{
     /* background-color: chartreuse; */
     width: 90%;
@@ -91,7 +92,7 @@ width: 375px;
 
 /********************MEDIA QUERRY*********************/
 
-@media screen and (min-width: 390px){
+/* @media screen and (min-width: 390px){
     html{
         width: 100%;
     }
@@ -156,4 +157,4 @@ width: 375px;
     padding: 1rem 3rem 1rem 1rem;
     font-size: 3rem;
 }
-}
+} */
