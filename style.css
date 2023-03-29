@@ -1,32 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-*::after{
+
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-*::before{
+
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     width: 375px;
     margin: 0 auto;
 }
 
-body{
-    font-size: 15px;  
+body {
+    font-size: 15px;
     font-family: 'Alata', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 /* .hidden{
     display: none;
 } */
-.heading{
+.heading {
     /* background-color: brown; */
     width: 100%;
     height: 100vh;
@@ -34,7 +38,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.heading .navigation{
+
+.heading .navigation {
     /* background-color: aqua; */
     /* min-height: 5rem; */
     display: flex;
@@ -42,40 +47,45 @@ body{
     justify-content: space-between;
     padding: 2rem 2rem 0 1.5rem;
 }
+
 /****************MOBILE MENU***************/
 
-.heading .navigation .nav-links{
-position: fixed;
-right: -100%;
-background-color: black;
-list-style: none;
-display: flex;
-flex-direction: column;
-gap: 2rem;
-width: 375px;
+.heading .navigation .nav-links {
+    position: fixed;
+    /* right: -100%; */
+    background-color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 375px;
 }
 
-.heading .navigation .nav-links a{
+.heading .navigation .nav-links a {
     text-decoration: none;
     color: white;
     padding: 0 0 0 3rem;
     text-transform: uppercase;
     font-size: 2rem;
-    
+
 }
-.heading .navigation .nav-links .link-logo{
+
+.heading .navigation .nav-links .link-logo {
     width: 10rem;
     padding: 3rem 0 10rem 2rem;
 }
-.heading .navigation .nav-links .active{
+
+.heading .navigation .nav-links .active {
     right: 0;
 }
+
 /****************MOBILE MENU ENDS***************/
 
-.heading .navigation .hamburger{
+.heading .navigation .hamburger {
     align-self: center;
 }
-.heading .immersive{
+
+.heading .immersive {
     /* background-color: chartreuse; */
     width: 90%;
     height: 12rem;
@@ -91,69 +101,79 @@ width: 375px;
 
 /********************MEDIA QUERRY*********************/
 
-@media screen and (min-width: 390px){
-    html{
+@media screen and (min-width: 390px) {
+    html {
         width: 100%;
     }
-    .heading .immersive{
-        margin: 15rem auto 0;  
+
+    .heading .immersive {
+        margin: 15rem auto 0;
     }
 }
 
 @media screen and (min-width: 412px) {
-    .heading .immersive{
-        margin: 17rem auto 0; 
-}
+    .heading .immersive {
+        margin: 17rem auto 0;
+    }
 }
 
 @media screen and (min-width: 414px) {
-    .heading .immersive{
-        height: 14rem; 
+    .heading .immersive {
+        height: 14rem;
         line-height: 3rem;
-        padding:1rem 12rem 1rem 1rem ;
+        padding: 1rem 12rem 1rem 1rem;
         margin: 16rem auto 0;
-    }  
+    }
 }
 
 @media screen and (min-width:1024px) {
-   html{
-    width: 100%;
-   }
-   .hide{
-    display: none;
-   }
-   .hidden{
-    display: block;
-}
-.heading{
-    background-image: url(/images/desktop/image-hero.jpg);
-}
-.heading .navigation .nav-loop-logo{
-    margin: 1rem 0 0 6rem;
-}
-.heading .navigation .nav-links{
-    display: flex;
-   padding-top: 2rem;
-   margin-right: 6rem;
-   font-weight: bold;
-}
-.heading .navigation .nav-links li{
-    margin: 0 1rem;
-    list-style-type: none;
-   
-}
-.heading .navigation .nav-links li a{
-    text-decoration: none;
-    color:hsl(0, 0%, 100%) ;
-    transition: 0.7s ease;
-}
-.heading .navigation .nav-links li a:hover{
-    color: hsl(0, 0%, 41%);
-}
-.heading .immersive{
-    width: 30%; 
-    margin-left: 7.5rem ;
-    padding: 1rem 3rem 1rem 1rem;
-    font-size: 3rem;
-}
+    html {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .heading {
+        background-image: url(/images/desktop/image-hero.jpg);
+    }
+
+    .heading .navigation .nav-loop-logo {
+        margin: 1rem 0 0 6rem;
+    }
+
+    .heading .navigation .nav-links {
+        display: flex;
+        padding-top: 2rem;
+        margin-right: 6rem;
+        font-weight: bold;
+    }
+
+    .heading .navigation .nav-links li {
+        margin: 0 1rem;
+        list-style-type: none;
+
+    }
+
+    .heading .navigation .nav-links li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        transition: 0.7s ease;
+    }
+
+    .heading .navigation .nav-links li a:hover {
+        color: hsl(0, 0%, 41%);
+    }
+
+    .heading .immersive {
+        width: 30%;
+        margin-left: 7.5rem;
+        padding: 1rem 3rem 1rem 1rem;
+        font-size: 3rem;
+    }
 }
