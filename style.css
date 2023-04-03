@@ -17,7 +17,7 @@
 }
 
 html {
-    max-width: 375px;
+    width: 375px;
     margin: 0 auto;
 }
 
@@ -129,16 +129,133 @@ body {
     font-size: 2rem;
     gap: 2rem;
 }
-
-@media screen and (min-width: 390px) {
-    html {
-        width: 100%;
-        margin: 0 auto;
-    } 
-    body{
-        width: 100%;
-    }
-    .heading{
-        width: 100%;
-    }
+/*************SECTION ONE - LEADER*************/
+.leader{
+/* background-color: aqua;     */
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
+.leader .image img{
+    width: 80%;
+    display: block;
+    margin: 7rem auto 0;
+}
+.leader .leader-text{
+    /* background-color: brown; */
+    width: 80%;
+    margin-top: 2rem;
+}
+.leader .leader-text .text-header{
+    /* background-color: blueviolet; */
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 0 1rem;
+}
+.leader .leader-text .text-body{
+    padding: 2rem 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.creation .see-all{
+    display: none;
+}
+.creation .our-creation{
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+/*************SECTION  TWO - GALLERY*************/
+.gallery{
+    display: grid;
+    height: 80rem;
+    grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.white{
+    /* background-color: chartreuse; */
+    color: white;
+    width: 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: left;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+}
+.gallery .deep-earth{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-deep-earth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .night-arcade{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-night-arcade.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .soccer{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-soccer-team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .the-grid{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-grid.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .from-up{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-from-above.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .pockect{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-pocket-borealis.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .curiosity{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-curiosity.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gallery .fish-eye{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-fisheye.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bottom-see-all{
+    display: block;
+    width: 10rem;
+    padding: 1rem 0;
+    margin: 2rem auto;
+    border: 1px solid black;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
