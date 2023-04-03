@@ -17,7 +17,7 @@
 }
 
 html {
-    width: 375px;
+    max-width: 375px;
     margin: 0 auto;
 }
 
@@ -85,7 +85,7 @@ body {
     margin: 5px auto;
     transition: all 0.6 ease-in-out;
 }
-
+/***************ACTIVE CLASSES***************/
 .heading .navigation .hamburger.active .bar:nth-child(2) {
     display: none;
 }
@@ -102,8 +102,12 @@ body {
     background-color: black;
     flex-direction: column;
     width: 375px;
-    padding: 8rem 3rem 4rem;
-    left: 496px
+    padding: 8rem 6rem 4rem 2rem;
+    z-index: 1;
+    left: 496px;
+    top: 60px;
+    gap: 2rem;
+
 }
 
 .heading .navigation .nav-links .links.active {
