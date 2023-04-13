@@ -85,6 +85,7 @@ body {
     margin: 5px auto;
     transition: all 0.6 ease-in-out;
 }
+
 /***************ACTIVE CLASSES***************/
 .heading .navigation .hamburger.active .bar:nth-child(2) {
     display: none;
@@ -129,25 +130,34 @@ body {
     font-size: 2rem;
     gap: 2rem;
 }
+
 /*************SECTION ONE - LEADER*************/
-.leader{
-/* background-color: aqua;     */
-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
+.leader {
+    /* background-color: aqua;     */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.leader .image img{
+.leader .image {
     width: 80%;
-    display: block;
-    margin: 7rem auto 0;
+    height:50%;
+    margin: 5rem auto 0;
+background-image: url(/images/desktop/image-interactive.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
 }
-.leader .leader-text{
-    /* background-color: brown; */
+
+.leader .leader-text {
+    background-color:white;
+    height: 50%;
     width: 80%;
     margin-top: 2rem;
 }
-.leader .leader-text .text-header{
+
+.leader .leader-text .text-header {
     /* background-color: blueviolet; */
     text-transform: uppercase;
     text-align: center;
@@ -155,15 +165,20 @@ align-items: center;
     font-weight: lighter;
     padding: 0 1rem;
 }
-.leader .leader-text .text-body{
-    padding: 2rem 3rem;
+
+.leader .leader-text .text-body {
+    padding: 1rem 3rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: light;
+    font-size: .8rem;
+    line-height: 1.5rem;
 }
-.creation .see-all{
+
+.creation .see-all {
     display: none;
 }
-.creation .our-creation{
+
+.creation .our-creation {
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 2rem;
@@ -171,13 +186,14 @@ align-items: center;
 
 
 /*************SECTION  TWO - GALLERY*************/
-.gallery{
+.gallery {
     display: grid;
     height: 80rem;
     grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
 }
-.white{
+
+.white {
     /* background-color: chartreuse; */
     color: white;
     width: 4rem;
@@ -188,63 +204,72 @@ align-items: center;
     top: 2.5rem;
     left: 1rem;
 }
-.gallery .deep-earth{
+
+.gallery .deep-earth {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-deep-earth.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .night-arcade{
+
+.gallery .night-arcade {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-night-arcade.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .soccer{
+
+.gallery .soccer {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-soccer-team.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .the-grid{
+
+.gallery .the-grid {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-grid.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .from-up{
+
+.gallery .from-up {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-from-above.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .pockect{
+
+.gallery .pockect {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-pocket-borealis.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .curiosity{
+
+.gallery .curiosity {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-curiosity.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.gallery .fish-eye{
+
+.gallery .fish-eye {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/images/mobile/image-fisheye.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.bottom-see-all{
+
+.bottom-see-all {
     display: block;
     width: 10rem;
     padding: 1rem 0;
@@ -254,8 +279,91 @@ align-items: center;
     text-transform: uppercase;
 }
 
-
-
-
-
-
+/******************MEDIA QUERRY***************** */
+@media screen and (min-width: 1000px) {
+    html {
+        width: 100%;
+    }
+    .heading {
+        background-image: url(/images/desktop/image-hero.jpg);
+    }
+    .heading .navigation .nav-loop-logo {
+margin: 3rem 0 0 5rem;
+    }
+    .heading .navigation .nav-links{
+        position: static;
+        opacity: 1;
+        padding-top: 3rem;
+        margin-right: 4rem;
+    }
+    .heading .navigation .nav-links li a{
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+    .heading .navigation .hamburger .bar {
+        display: none;
+    }
+    .heading .immersive{
+        width: 50%;
+        /* background-color: brown; */
+        margin: 10rem 0 0 7rem ;
+        padding: 2rem 8.5rem 2rem 2rem;
+        font-size: 4.4rem
+    }
+    .leader{
+        /* background-color: aquamarine; */
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .leader .image {
+        height: 60%;
+        width: 70%;
+        background-image: url(/images/desktop/image-interactive.jpg);
+        margin: 0;
+    }
+    .leader .leader-text{
+        height: 250px;
+        width: 60%;
+      position: relative;
+      right: 8rem;
+      top: 3.5rem;
+    }
+    .leader .leader-text .text-header{
+        padding: 3rem 3rem 0;
+        text-align: left;
+    }
+    .leader .leader-text .text-body{
+        text-align: left;
+        padding-bottom: 0rem;
+    }
+    /* ***********GRID GALLERY*********** */
+    .gallery{
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 30rem;
+    }
+    .gallery .deep-earth{
+        background-image: url(/images/desktop/image-deep-earth.jpg);
+    }
+    .gallery  .soccer {
+        background-image: url(/images/desktop/image-soccer-team.jpg);
+    }
+    .gallery .the-grid{
+        background-image: url(/images/desktop/image-grid.jpg);
+    }
+    .gallery .from-up {
+        background-image: url(/images/desktop/image-from-above.jpg);
+    }
+    .gallery .pockect{
+        background-image: url(/images/desktop/image-pocket-borealis.jpg);
+    }
+    .gallery .curiosity{
+        background-image: url(/images/desktop/image-curiosity.jpg);
+    }
+    .gallery .fish-eye{
+        background-image: url(/images/desktop/image-fisheye.jpg);
+    }
+   
+}
