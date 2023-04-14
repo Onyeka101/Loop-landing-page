@@ -295,14 +295,17 @@ background-repeat: no-repeat;
 }
 .footer .top-left .bottom-navLinks{
     list-style: none;
-}
-.footer.top-left .bottom-navLinks li{
-    padding: 1rem 0;
     text-align: center;
+    
+}
+.footer .top-left .bottom-navLinks li{
+    padding: 1rem 0;
+       
 }
 .footer .top-left .bottom-navLinks li a{
     text-decoration: none;
     color: white;
+    padding: 3rem 0;
     
 }
 .color{
