@@ -187,8 +187,9 @@ background-repeat: no-repeat;
 
 /*************SECTION  TWO - GALLERY*************/
 .gallery {
+    /* background-color: aqua; */
     display: grid;
-    height: 80rem;
+    height: 70rem;
     grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
 }
@@ -278,6 +279,50 @@ background-repeat: no-repeat;
     background: transparent;
     text-transform: uppercase;
 }
+.footer{
+    background-color: black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .top-left{
+    margin-top: 3rem;
+    /* background-color:brown; */
+}
+.footer .top-left .loopstudios{
+    font-size: 2rem;
+}
+.footer .top-left .bottom-navLinks{
+    list-style: none;
+}
+.footer.top-left .bottom-navLinks li{
+    padding: 1rem 0;
+    text-align: center;
+}
+.footer .top-left .bottom-navLinks li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.color{
+    color: white;
+}
+.footer .top-left .bottom-navLinks{
+    /* background-color: chartreuse; */
+}
+.footer .bottom-right .icons{
+    /* background-color: chocolate; */
+padding: 1rem 0;
+width: 60%;
+margin: auto;
+}
+.footer .bottom-right .icons img{
+   padding: 0 .3rem;
+}
+.footer .bottom-right .copy-right{
+    color:hsl(0, 0%, 55%) ;
+}
 
 /******************MEDIA QUERRY***************** */
 @media screen and (min-width: 1000px) {
@@ -337,6 +382,31 @@ margin: 3rem 0 0 5rem;
         text-align: left;
         padding-bottom: 0rem;
     }
+    .creation{
+        /* background-color: aqua; */
+        width: 80%;
+        padding-bottom: 1rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+    .creation .our-creation{
+        font-size: xx-large;
+        font-weight: lighter;
+    }
+    /* SEE ALL BUTTON */
+    .creation .see-all{
+        display: block;
+       margin-bottom: 2rem;
+       padding: 0.3rem 2rem;
+       border: 1px solid black;
+       background: transparent;
+       text-transform: uppercase;
+    }
+    .bottom-see-all{
+        display: none;
+    }
     /* ***********GRID GALLERY*********** */
     .gallery{
         width: 80%;
@@ -365,5 +435,18 @@ margin: 3rem 0 0 5rem;
     .gallery .fish-eye{
         background-image: url(/images/desktop/image-fisheye.jpg);
     }
-   
+   .footer{
+    height: 30vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+   }
+   .footer .top-left .bottom-navLinks{
+    display: flex;
+    padding-top: 1rem;
+    gap: 2rem;
+   }
+   .footer .bottom-right{
+    text-align: right;
+   }
 }
